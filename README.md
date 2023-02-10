@@ -17,3 +17,21 @@ import cv2
 import pandas as pd
 import numpy as np
 ```
+## 將圖做前處理(CLAHE和ROI)
+```
+def clahe(img):
+  clahe = cv2.createCLAHE(clipLimit = 40, tileGridSize = (12,12))
+  clahe_image = clahe.apply(img)
+  #output image
+  return clahe_image
+```
+```
+def roi(img, img_height, img_width):
+  x = img_width//2
+  y = int(img_height*0.1)
+  roi_img = img[y:y+1024, x-512:x+512]
+
+  # cv2_imshow(roi_img)
+  return roi_img
+
+```
