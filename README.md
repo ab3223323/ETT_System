@@ -10,8 +10,8 @@
 https://www.kaggle.com/c/ranzcr-clip-catheter-line-classification/overview  
 
 ## Import  
-import tensorflow as tf  
-from tensorflow import keras  
-import cv2  
-import pandas as pd  
-import numpy as np  
+code(import tensorflow as tf)
+code(from tensorflow import keras)
+code(import cv2)
+code(import pandas as pd)
+code(import numpy as np)
