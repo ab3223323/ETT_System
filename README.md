@@ -10,7 +10,7 @@
 https://www.kaggle.com/c/ranzcr-clip-catheter-line-classification/overview  
 
 ## Import  
-```js
+```
 import tensorflow as tf 
 from tensorflow import keras
 import cv2
