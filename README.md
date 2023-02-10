@@ -8,3 +8,10 @@
 ## 資料集
 使用RANZCR CLiP - Catheter and Line Position Challenge 約3000張胸腔x光  
 https://www.kaggle.com/c/ranzcr-clip-catheter-line-classification/overview  
+
+## Import  
+import tensorflow as tf  
+from tensorflow import keras  
+import cv2  
+import pandas as pd  
+import numpy as np  
