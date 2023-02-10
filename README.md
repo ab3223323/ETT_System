@@ -54,3 +54,8 @@ ettImg = cv2.resize(ettImg, (512, 512), interpolation=cv2.INTER_AREA)
 predict_data[0] = np.expand_dims(ettImg/255, 2)
 
 ```
+## DEMO (Colab)
+https://colab.research.google.com/drive/1E4CKRrfRvbRV2NsNCRhA-BG5UEknNVek
+
+## train model
+https://colab.research.google.com/drive/1J3sQbgBxc_VEZZzVZI8l71GSe44wlTkQ
