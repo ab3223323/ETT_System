@@ -1,4 +1,4 @@
-# ETT_System
+tttt# ETT_System
 分析氣管內管端點與隆突端點  
 輸入胸腔x光圖，印出預測結果及分析距離  
 分析多種model並系集  
@@ -33,5 +33,24 @@ def roi(img, img_height, img_width):
 
   # cv2_imshow(roi_img)
   return roi_img
+```
+
+## define DataSet
+```
+Predict_num = 1
+predict_data = np.zeros((Predict_num,) + (512,512) + (1,), dtype="float32")
+
+img_height = img.shape[0]
+img_width = img.shape[1]
+
+# generate CLAHE
+ettImg = clahe(img)
+# generate ROI
+ettImg = roi(ettImg, img_height, img_width)
+
+#resize to 512x512
+ettImg = cv2.resize(ettImg, (512, 512), interpolation=cv2.INTER_AREA)
+
+predict_data[0] = np.expand_dims(ettImg/255, 2)
 
 ```
